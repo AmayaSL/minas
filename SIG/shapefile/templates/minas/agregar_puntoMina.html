@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Nuevo punto de mina</title>
+    </head>
+    <body>
+        <form method="POST">
+            <h1>Agregar punto de mina</h1>
+            <table>
+                <tr>
+                    <td><label for="id_cod_departamento">Departamento:</label></td>
+                    <td>{{ formaMinasPoint.cod_departamento }}</td>
+                </tr>
+                <tr>
+                    <td><label for="id_cod_municipio">Municipio:</label></td>
+                    <td>{{ formaMinasPoint.cod_municipio }}</td>
+                </tr>
+                <tr>
+                    <td><label for="id_anyo">Año:</label></td>
+                    <td>{{ formaMinasPoint.anyo }}</td>
+                </tr>
+                <tr>
+                    <td><label for="id_mes">Mes:</label></td>
+                    <td>{{ formaMinasPoint.mes }}</td>
+                </tr>
+                <tr>
+                    <td><label for="id_edad">Edad:</label></td>
+                    <td>{{ formaMinasPoint.edad }}</td>
+                </tr>
+                <tr>
+                    <td><label for="id_ocupacion">Ocupación:</label></td>
+                    <td>{{ formaMinasPoint.ocupacion }}</td>
+                </tr>
+                <tr>
+                    <td><label for="id_genero">Género:</label></td>
+                    <td>{{ formaMinasPoint.genero }}</td>
+                </tr>
+                <tr>
+                    <td><label for="id_condicion">Condición:</label></td>
+                    <td>{{ formaMinasPoint.condicion }}</td>
+                </tr>
+                <tr>
+                    <td><label for="id_y">Y:</label></td>
+                    <td>{{ formaMinasPoint.y }}</td>
+                </tr>
+                <tr>
+                    <td><label for="id_x">X:</label></td>
+                    <td>{{ formaMinasPoint.x }}</td>
+                </tr>
+                <tr>
+                    <td><label for="id_lugar_deto">Lugar de Detención:</label></td>
+                    <td>{{ formaMinasPoint.lugar_deto }}</td>
+                </tr>
+                <tr>
+                    <td><label for="id_actividad">Actividad:</label></td>
+                    <td>{{ formaMinasPoint.actividad }}</td>
+                </tr>
+                <tr>
+                    <td><label for="id_x_cmt12">X CMT12:</label></td>
+                    <td>{{ formaMinasPoint.x_cmt12 }}</td>
+                </tr>
+                <tr>
+                    <td><label for="id_y_cmt12">Y CMT12:</label></td>
+                    <td>{{ formaMinasPoint.y_cmt12 }}</td>
+                </tr>
+                
+            </table>
+            <button type="submit">Guardar</button>
+            {% csrf_token %}
+        </form>
+    </body>
+</html>

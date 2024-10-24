@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Cargar archivo</title>
+    </head>
+    <body>
+        <form action="/cargar_archivo/post/" method="POST" enctype="multipart/form-data">
+            <h1>Cargar archivo shapefile</h1>
+            <table>
+                <tr>
+                    <td>
+                        <input type="file" name="shapefiles" accept=".shp,.shx,.dbf,.cpg,.prj,.qmd" required multiple>
+                    </td>
+                </tr>
+            </table>
+            <button type="submit">Cargar Archivos</button>
+            {% csrf_token %}
+        </form>
+    </body>
+</html>

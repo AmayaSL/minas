@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Nuevo municipio</title>
+    </head>
+    <body>
+        <form method="POST">
+            <h1>Agregar municipio</h1>
+            <table>
+                <tr>
+                    <td><label for="id_cod_departamento">Nombre Departamento:</label></td>
+                    <td>{{ formaMunicipio.cod_departamento }}</td>
+                </tr>
+                <tr>
+                    <td><label for="id_cod_municipio">Cod municipio:</label></td>
+                    <td>{{ formaMunicipio.cod_municipio }}</td>
+                </tr>
+                <tr>
+                    <td><label for="id_municipio">Nombre del municipio:</label></td>
+                    <td>{{ formaMunicipio.municipio }}</td>
+                </tr>
+                <tr>
+                    <td><label for="id_zona">Zona:</label></td>
+                    <td>{{ formaMunicipio.zona }}</td>
+                </tr>
+                <tr>
+                    <td><label for="id_vereda">Nombre de la vereda o barrio:</label></td>
+                    <td>{{ formaMunicipio.vereda }}</td>
+                </tr>
+            </table>
+            <button type="submit">Guardar</button>
+            {% csrf_token %}
+        </form>
+    </body>
+</html>
